@@ -1,0 +1,18 @@
+{
+	"request_source.json": {
+		"class":"App\\RequestSource\\RequestSourceJson",
+		"arguments":["data.json"]
+	},
+	"source_manager": {
+		"class":"App\\RequestSource\\SourceManager",
+		"arguments":["@request_source.json"]
+	},
+	"chart_storage.file": {
+		"class":"App\\Chart\\ChartFileStorage",
+		"arguments":["cache/chart.json"]
+	},
+	"chart_manager": {
+		"class":"App\\Chart\\ChartManager",
+		"arguments":["@chart_storage.file"]
+	}
+}

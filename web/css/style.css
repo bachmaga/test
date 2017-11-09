@@ -1,0 +1,39 @@
+html, body {
+	margin: 0px;
+	width: 100%;
+}
+.wrapper {
+	width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+#table_head, #table_body {
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+	background: #eee;
+}
+.table_row {
+	display: table-row;
+}
+.table_cell {
+	display: table-cell;
+	border: 1px solid #ddd;
+    padding: .5em 5px;
+    font-size: 1.2em;
+}
+#table_body .table_cell {
+	background-color: #ffffff;
+}
+.caption {
+	margin: 0;
+    font-weight: bold;
+    font-size: 1.3em;
+    background: #eee;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+#chart {
+	width: 100%;
+}
